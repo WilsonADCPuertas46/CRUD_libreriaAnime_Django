@@ -1,0 +1,22 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-ligth"
+     style="background: linear-gradient(337deg, rgba(0,0,0,1) 0%, rgba(246,40,164,1) 100%);">
+    <div class="container">
+        <a class="navbar-brand btn btn-outline-dark" href="/"><strong>Home</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item d-flex align-items-center">
+                    <a class="btn btn-outline-light btn-md" aria-current="page" href="{% url 'register' %}">Libreria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light btn-md" href="{% url 'info' %}">Información</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
